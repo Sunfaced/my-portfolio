@@ -8,9 +8,6 @@ import Projects from "../../pages/Projects";
 // Навигация по проекту
 
 export const Navigate = () => {
-
-  // const listItems = ["Главная", "Проекты", "Контакты"];
-
   return (
     <nav className="nav">
       <div className="container">
@@ -19,22 +16,20 @@ export const Navigate = () => {
             <Cube />
           </a>
           <ul className="nav-bar">
-            {/* {listItems.map((item, index) => (
-              <li key={index} className="nav-bar__item">
-                <a href="#">
-                  {item}
-                </a>
-              </li>
-            ))} */}
-            
             <li>
-              <NavLink className='nav-link' to="/">Главная</NavLink>
+              <NavLink className="nav-link" to="/">
+                Главная
+              </NavLink>
             </li>
             <li>
-              <NavLink className='nav-link' to="/projects">Проекты</NavLink>
+              <NavLink className="nav-link" to="/projects">
+                Проекты
+              </NavLink>
             </li>
             <li>
-              <NavLink className='nav-link' to="/contacts">Контакты</NavLink>
+              <NavLink className="nav-link" to="/contacts">
+                Контакты
+              </NavLink>
             </li>
           </ul>
         </div>
