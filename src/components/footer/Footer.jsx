@@ -1,8 +1,8 @@
 import "./footer.css";
-import codewars from "../../images/codewars-icon-512x509-knvtsgna.svg"
-import github from "../../images/github.svg"
-import VK from "../../images/vk.svg"
-import instagram from "../../images/instagram.svg"
+import codewars from "./../../images/codewars.png"
+import github from "./../../images/github.svg"
+import VK from "./../../images/vk.svg"
+import instagram from "./../../images/instagram.svg"
 
 
 export const Footer = () => {

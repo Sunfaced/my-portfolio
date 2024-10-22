@@ -1,5 +1,5 @@
 import './contacts.css'
-import MyPhoto from "./../images/My-photo.jpg"
+import MyPhoto from "./../images/MyPhoto.jpg"
 
 const Contacts = () => {
   return (
