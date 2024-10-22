@@ -1,0 +1,56 @@
+/* Общие стили для всего проекта */
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "DM Sans", sans-serif;
+  background-image: url(../images/black.jpg);
+  background-size: cover;
+  background-color: rgb(27, 23, 23);
+  height: 100%;
+}
+
+#root {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* .App {
+  min-height: 100%;
+} */
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-size: 28px;
+}
+
+img,
+svg {
+  width: 50px;
+  height: 50px;
+  border: 1px solid white;
+  border-radius: 15px;
+  background-color: white;
+}

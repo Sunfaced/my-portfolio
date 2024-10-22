@@ -1,0 +1,27 @@
+.footer {
+  background: rgb(219, 210, 226);
+  background: linear-gradient(
+    90deg,
+    rgba(219, 210, 226, 1) 0%,
+    rgba(22, 22, 22, 1) 50%
+  );
+  height: 160px;
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-list__copy {
+  font-size: 25px;
+  margin-top: 10px;
+}

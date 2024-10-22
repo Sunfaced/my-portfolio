@@ -1,0 +1,49 @@
+.cube {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  transform-style: preserve-3d; /* сохраняем 3D-стили */
+  transition: transform 0.3s; /* плавный переход */
+}
+
+.face {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgb(27, 23, 23);
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  text-transform: uppercase;
+  animation: 2s neon-2 alternate-reverse infinite;
+}
+
+/* Позиционирование сторон куба */
+.front {
+  transform: translateZ(50px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+@keyframes neon-2 {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #bfe2ff;
+  }
+  to {
+    text-shadow: 0 0 20px #bfe2ff, 0 0 35px #bfe2ff, 0 0 40px #bfe2ff,
+      0 0 50px #bfe2ff, 0 0 800px #bfe2ff;
+  }
+}

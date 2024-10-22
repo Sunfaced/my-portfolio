@@ -1,0 +1,38 @@
+.main {
+  border-bottom: 1px solid white;
+  flex-grow: 1;
+}
+
+.main-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+}
+
+.main-section__cite {
+  position: relative;
+  padding: 16px 24px;
+  /* quotes: "«" "»" "„" "”"; */
+}
+
+.main-section__cite::before {
+  position: absolute;
+  font-size: 90px;
+  content: "“";
+  left: -30px;
+  top: -10px;
+}
+
+.main-section__cite::after {
+  position: absolute;
+  font-size: 90px;
+  content: "”";
+  right: -30px;
+  bottom: -10px;
+}
+
+figcaption {
+  text-align: right;
+}

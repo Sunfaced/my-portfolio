@@ -1,0 +1,13 @@
+.header-info {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-title {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 1px;
+}
