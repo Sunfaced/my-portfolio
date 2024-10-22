@@ -1,12 +1,12 @@
 import './contacts.css'
-
+import MyPhoto from "./../images/My-photo.jpg"
 
 const Contacts = () => {
   return (
     <>
       <main className="section">
         <div className="container">
-          <img className="contact-photo" src="/src/images/My photo2.jpg" alt="My photo" />
+          <img className="contact-photo" src={MyPhoto} alt="My photo" />
           <h1 className="title-1">Контакты для связи</h1>
           <ul className="contact-list">
             <li className="contact-list__item">
