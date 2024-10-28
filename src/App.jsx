@@ -15,10 +15,10 @@ function App() {
         <ScrollToTop />
         <Navigate />
         <Routes>
+          {/* <Route path="/My-portfolio" element={<Home />} /> */}
           <Route path="/my-portfolio" element={<Home />} />
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contacts" element={<Contacts />} />
+          <Route path="/my-portfolio/projects" element={<Projects />} />
+          <Route path="/my-portfolio/contacts" element={<Contacts />} />
         </Routes>
 
         <Footer />

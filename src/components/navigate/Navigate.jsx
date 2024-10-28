@@ -17,17 +17,17 @@ export const Navigate = () => {
           </a>
           <ul className="nav-bar">
             <li>
-              <NavLink className="nav-link" to="/">
+              <NavLink className="nav-link" to="/my-portfolio">
                 Главная
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-link" to="/projects">
+              <NavLink className="nav-link" to="/my-portfolio/projects">
                 Проекты
               </NavLink>
             </li>
             <li>
-              <NavLink className="nav-link" to="/contacts">
+              <NavLink className="nav-link" to="/my-portfolio/contacts">
                 Контакты
               </NavLink>
             </li>
