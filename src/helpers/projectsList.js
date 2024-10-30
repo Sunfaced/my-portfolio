@@ -1,4 +1,5 @@
 import TheGame from "../images/TheGame.jpg";
+import PassGen from "../images/PassGen.jpg";
 
 const projects = [
   {
@@ -10,11 +11,11 @@ const projects = [
   {
     title: "Password Generator",
     skills: "JavaScript",
-    img: TheGame,
-    gitHubLink: "https://sunfaced.github.io/TheGame/",
+    img: PassGen,
+    gitHubLink: "https://sunfaced.github.io/password-generator/",
   },
   {
-    title: "To do list",
+    title: "To Do list",
     skills: "JavaScript",
     img: TheGame,
     gitHubLink: "https://sunfaced.github.io/TheGame/",
@@ -26,7 +27,7 @@ const projects = [
     gitHubLink: "https://sunfaced.github.io/TheGame/",
   },
   {
-    title: "Landing",
+    title: "Restaurant menu",
     skills: "JavaScript",
     img: TheGame,
     gitHubLink: "https://sunfaced.github.io/TheGame/",
