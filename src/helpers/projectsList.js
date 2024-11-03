@@ -1,5 +1,9 @@
 import TheGame from "../images/TheGame.jpg";
 import PassGen from "../images/PassGen.jpg";
+import ToDo from "../images/ToDo.jpg";
+import qr from "../images/qr.jpg";
+import xiaomiHimo from "../images/xiaomiHimo.jpg";
+import iphone from "../images/iphone.jpg";
 
 const projects = [
   {
@@ -10,33 +14,33 @@ const projects = [
   },
   {
     title: "Password Generator",
-    skills: "JavaScript",
+    skills: "HTML, CSS, JavaScript",
     img: PassGen,
     gitHubLink: "https://sunfaced.github.io/password-generator/",
   },
   {
     title: "To Do list",
-    skills: "JavaScript",
-    img: TheGame,
-    gitHubLink: "https://sunfaced.github.io/TheGame/",
+    skills: "HTML, CSS, JavaScript",
+    img: ToDo,
+    gitHubLink: "https://sunfaced.github.io/LittleToDo/",
   },
   {
     title: "QR Reader",
-    skills: "JavaScript",
-    img: TheGame,
-    gitHubLink: "https://sunfaced.github.io/TheGame/",
+    skills: "HTML, CSS, JavaScript, React",
+    img: qr,
+    gitHubLink: "https://sunfaced.github.io/qr-reader/",
   },
   {
-    title: "Restaurant menu",
-    skills: "JavaScript",
-    img: TheGame,
-    gitHubLink: "https://sunfaced.github.io/TheGame/",
+    title: "Xiaomi Himo landing page",
+    skills: "HTML, CSS",
+    img: xiaomiHimo,
+    gitHubLink: "https://sunfaced.github.io/xiaomi-himo/",
   },
   {
-    title: "Landing",
-    skills: "JavaScript",
-    img: TheGame,
-    gitHubLink: "https://sunfaced.github.io/TheGame/",
+    title: "Iphone landing page",
+    skills: "HTML, CSS",
+    img: iphone,
+    gitHubLink: "https://sunfaced.github.io/iphone-landing-page/",
   },
 ];
 
