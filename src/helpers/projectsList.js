@@ -4,8 +4,15 @@ import ToDo from "../images/ToDo.jpg";
 import qr from "../images/qr.jpg";
 import xiaomiHimo from "../images/xiaomiHimo.jpg";
 import iphone from "../images/iphone.jpg";
+import onlineStore from "../images/online-store.png";
 
 const projects = [
+  {
+    title: "Online store",
+    skills: "HTML, CSS, JavaScript, React",
+    img: onlineStore,
+    gitHubLink: "https://sunfaced.github.io/online-store/",
+  },
   {
     title: "The Game",
     skills: "HTML, CSS, JavaScript",
