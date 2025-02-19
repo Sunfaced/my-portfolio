@@ -47,3 +47,9 @@
       0 0 50px #bfe2ff, 0 0 800px #bfe2ff;
   }
 }
+
+@media (max-width: 768px) {
+  .nav-cube {
+    display: none;  /* Скрываем куб на мобильных устройствах */
+  }
+}

@@ -1,13 +1,37 @@
+.header {
+  border-bottom: 1px solid white;
+}
+
 .header-info {
   min-height: 400px;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .header-title {
   font-size: 60px;
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 1px;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header-info {
+    min-height: 300px;
+  }
+
+  .header-title {
+    font-size: 40px !important; /* Используем !important только в крайнем случае */
+    line-height: 1.2;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-info {
+    min-height: 250px;
+  }
+
+  .header-title {
+    font-size: 32px !important;
+  }
 }

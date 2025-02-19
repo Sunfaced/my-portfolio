@@ -20,7 +20,7 @@
 .main-section__cite::before {
   position: absolute;
   font-size: 90px;
-  content: "“";
+  content: """;
   left: -30px;
   top: -10px;
 }
@@ -28,11 +28,50 @@
 .main-section__cite::after {
   position: absolute;
   font-size: 90px;
-  content: "”";
+  content: """;
   right: -30px;
   bottom: -10px;
 }
 
+@media (max-width: 768px) {
+  .main-section {
+    font-size: 24px !important;
+    padding: 15px;
+  }
+
+  .main-section__cite {
+    padding: 12px 20px;
+  }
+
+  .main-section__cite::before,
+  .main-section__cite::after {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-section {
+    font-size: 20px !important;
+    padding: 10px;
+  }
+
+  .main-section__cite::before,
+  .main-section__cite::after {
+    font-size: 40px;
+  }
+}
+
 figcaption {
   text-align: right;
+}
+
+.main-section p {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+marquee {
+  display: block;
+  width: 100%;
 }
