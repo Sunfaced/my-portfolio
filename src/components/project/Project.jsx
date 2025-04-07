@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./project.css";
-import TheGame from "./../../images/TheGame.jpg"
 
 const Project = ({title, img, gitHubLink, skills}) => {
   const [imageLoaded, setImageLoaded] = useState(false);
