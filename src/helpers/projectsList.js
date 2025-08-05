@@ -11,8 +11,15 @@ import urbanDwelling from "../images/urbanDwelling.jpg";
 import historyDate from "../images/history-date.png";
 import simpleOneTest from "../images/simple-one-test.jpg";
 import htmlTest from "../images/html-test-6.jpg";
+import taskManagementApp from "../images/taskManagement.jpeg";
 
 const projects = [
+  {
+    title: "Task Management App",
+    skills: "React, Context API, DnD Kit, CSS Modules",
+    img: taskManagementApp,
+    gitHubLink: "https://sunfaced.github.io/task-management-app/",
+  },
   {
     title: "Online store",
     skills: "HTML, CSS, JavaScript, React",
@@ -84,12 +91,6 @@ const projects = [
     skills: "HTML, CSS",
     img: iphone,
     gitHubLink: "https://sunfaced.github.io/iphone-landing-page/",
-  },
-  {
-    title: "Task Management App",
-    skills: "React, Context API, DnD Kit, CSS Modules",
-    img: taskManagementApp,
-    gitHubLink: "https://sunfaced.github.io/task-management-app/",
   },
 ];
 
