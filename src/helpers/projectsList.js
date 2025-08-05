@@ -4,14 +4,13 @@ import ToDo from "../images/ToDo.jpg";
 import qr from "../images/qr-reader.png";
 import xiaomiHimo from "../images/xiaomiHimo.jpg";
 import iphone from "../images/iphone.jpg";
-import taskManagementApp from "../images/taskManagementApp.jpg";
 import onlineStore from "../images/o-s.png";
 import trainingDiary from "../images/training-diary.png";
 import urbanDwelling from "../images/urbanDwelling.jpg";
 import historyDate from "../images/history-date.png";
 import simpleOneTest from "../images/simple-one-test.jpg";
 import htmlTest from "../images/html-test-6.jpg";
-import taskManagementApp from "../images/taskManagement.jpeg";
+import taskManagementApp from "../images/taskManagement.jpg";
 
 const projects = [
   {
@@ -39,6 +38,12 @@ const projects = [
     gitHubLink: "https://sunfaced.github.io/history-date-test/",
   },
   {
+    title: "Training Diary",
+    skills: "HTML, CSS, JavaScript, React",
+    img: trainingDiary,
+    gitHubLink: "https://sunfaced.github.io/training-diary/",
+  },
+  {
     title: "HTML test 6",
     skills: "HTML, SCSS, JavaScript",
     img: htmlTest,
@@ -56,12 +61,7 @@ const projects = [
     img: qr,
     gitHubLink: "https://sunfaced.github.io/qr-reader/",
   },
-  {
-    title: "Training Diary",
-    skills: "HTML, CSS, JavaScript, React",
-    img: trainingDiary,
-    gitHubLink: "https://sunfaced.github.io/training-diary/",
-  },
+
   {
     title: "Test work for HH",
     skills: "HTML, CSS, JavaScript",
