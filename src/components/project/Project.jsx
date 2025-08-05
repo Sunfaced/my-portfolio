@@ -6,13 +6,13 @@ const Project = ({title, img, gitHubLink, skills}) => {
 
   return (
     <li className="project">
-      <a className="project-link" href={gitHubLink}>
+      <a className="project-link" href={gitHubLink} target="_blank" rel="noopener noreferrer" aria-label={`Открыть репозиторий ${title} на GitHub`}>
         <div className="image-container">
           {!imageLoaded && <div className="image-placeholder" />}
           <img
             className={`project-img ${imageLoaded ? 'loaded' : ''}`}
             src={img}
-            alt={title}
+            alt={`Скриншот проекта ${title}` }
             loading="lazy"
             onLoad={() => setImageLoaded(true)}
           />

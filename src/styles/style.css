@@ -29,6 +29,7 @@ body.menu-open {
 }
 
 #root {
+  --section-spacing: clamp(2rem, 5vw, 4rem);
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -36,16 +37,16 @@ body.menu-open {
   position: relative;
 }
 
-/* .App {
-  min-height: 100%;
-} */
-
 .container {
   max-width: 1280px;
   margin: 0 auto;
   padding: 20px;
   text-align: center;
   color: white;
+}
+
+section {
+  margin-block: var(--section-spacing);
 }
 
 /* Базовые стили */
@@ -61,7 +62,7 @@ a {
 }
 
 p {
-  font-size: 28px;
+  font-size: clamp(16px, 2vw + 14px, 28px);
 }
 
 img,

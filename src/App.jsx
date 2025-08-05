@@ -15,15 +15,15 @@ const Contacts = lazy(() => import("./pages/Contacts"));
 function App() {
   return (
     <>
-      <Router>
+      <Router basename="/my-portfolio">
         <ScrollToTop />
         <Navigate />
         <Suspense fallback={<LoadingSpinner />}>
           <Routes>
             {/* <Route path="/My-portfolio" element={<Home />} /> */}
-            <Route path="/my-portfolio" element={<Home />} />
-            <Route path="/my-portfolio/projects" element={<Projects />} />
-            <Route path="/my-portfolio/contacts" element={<Contacts />} />
+            <Route path="/" element={<Home />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contacts" element={<Contacts />} />
           </Routes>
         </Suspense>
         <Footer />

@@ -1,45 +1,64 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import "./navigate.css";
 import Cube from "../cube/Cube";
 import BurgerButton from "../burger/BurgerButton";
 import { NavLink } from "react-router-dom";
-import Contacts from "../../pages/Contacts";
-import Projects from "../../pages/Projects";
+
 
 // Навигация по проекту
 
 export const Navigate = () => {
+  const navRef = useRef(null);
   const [isOpen, setIsOpen] = useState(false);
 
   // Блокируем прокрутку при открытом меню
   useEffect(() => {
+    const navEl = navRef.current;
+
+    // функция для закрытия меню по Esc
+    const escHandler = (e) => {
+      if (e.key === 'Escape') {
+        setIsOpen(false);
+      }
+    };
+
+    document.addEventListener('keydown', escHandler);
+
     if (isOpen) {
       document.body.classList.add('menu-open');
-      document.querySelector('.nav').classList.add('menu-open');
+      navEl?.classList.add('menu-open');
+      // фокусируем первый пункт меню
+      const firstLink = navEl?.querySelector('.nav-bar a');
+      firstLink && firstLink.focus();
     } else {
       document.body.classList.remove('menu-open');
-      document.querySelector('.nav')?.classList.remove('menu-open');
+      navEl?.classList.remove('menu-open');
     }
     
     return () => {
+      document.removeEventListener('keydown', escHandler);
       document.body.classList.remove('menu-open');
-      document.querySelector('.nav')?.classList.remove('menu-open');
+      navEl?.classList.remove('menu-open');
     };
   }, [isOpen]);
 
   return (
-    <nav className={`nav ${isOpen ? 'menu-open' : ''}`}>
+    <nav ref={navRef} className={`nav ${isOpen ? 'menu-open' : ''}`}>
       <div className="container">
         <div className="nav-menu">
-          <a className="nav-cube" href="#">
+          <NavLink 
+            className="nav-cube" 
+            to="/" 
+            aria-label="На главную"
+            onClick={() => setIsOpen(false)}>
             <Cube />
-          </a>
+          </NavLink>
           <BurgerButton isOpen={isOpen} setIsOpen={setIsOpen} />
           <ul className={`nav-bar ${isOpen ? 'open' : ''}`}>
             <li>
               <NavLink 
                 className="nav-link" 
-                to="/my-portfolio"
+                to="/"
                 onClick={() => setIsOpen(false)}
               >
                 Главная
@@ -48,7 +67,7 @@ export const Navigate = () => {
             <li>
               <NavLink 
                 className="nav-link" 
-                to="/my-portfolio/projects"
+                to="/projects"
                 onClick={() => setIsOpen(false)}
               >
                 Проекты
@@ -57,7 +76,7 @@ export const Navigate = () => {
             <li>
               <NavLink 
                 className="nav-link" 
-                to="/my-portfolio/contacts"
+                to="/contacts"
                 onClick={() => setIsOpen(false)}
               >
                 Контакты

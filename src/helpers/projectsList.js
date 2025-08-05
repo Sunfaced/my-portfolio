@@ -4,6 +4,7 @@ import ToDo from "../images/ToDo.jpg";
 import qr from "../images/qr-reader.png";
 import xiaomiHimo from "../images/xiaomiHimo.jpg";
 import iphone from "../images/iphone.jpg";
+import taskManagementApp from "../images/taskManagementApp.jpg";
 import onlineStore from "../images/o-s.png";
 import trainingDiary from "../images/training-diary.png";
 import urbanDwelling from "../images/urbanDwelling.jpg";
@@ -83,6 +84,12 @@ const projects = [
     skills: "HTML, CSS",
     img: iphone,
     gitHubLink: "https://sunfaced.github.io/iphone-landing-page/",
+  },
+  {
+    title: "Task Management App",
+    skills: "React, Context API, DnD Kit, CSS Modules",
+    img: taskManagementApp,
+    gitHubLink: "https://sunfaced.github.io/task-management-app/",
   },
 ];
 

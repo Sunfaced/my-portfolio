@@ -3,18 +3,20 @@ import "./cube.css"
 
 const Cube = () => {
   const cubeRef = useRef(null);
-  let rotateY = 0;
+  const rotateY = useRef(0);
+  const requestId = useRef(null);
 
   const animate = () => {
-    rotateY += 0.5; // увеличиваем угол вращения
+    rotateY.current += 0.5; // увеличиваем угол вращения
     if (cubeRef.current) {
-      cubeRef.current.style.transform = `rotateY(${rotateY}deg)`;
+      cubeRef.current.style.transform = `rotateY(${rotateY.current}deg)`;
     }
-    requestAnimationFrame(animate); // вызываем анимацию снова
+    requestId.current = requestAnimationFrame(animate); // сохраняем id анимации
   };
 
   useEffect(() => {
-    animate(); // запускаем анимацию при монтировании компонента
+    requestId.current = requestAnimationFrame(animate); // запускаем анимацию при монтировании
+    return () => cancelAnimationFrame(requestId.current); // очищаем при размонтировании
   }, []);
 
   return (

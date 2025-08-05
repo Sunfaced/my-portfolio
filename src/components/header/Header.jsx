@@ -9,7 +9,7 @@ export const Header = () => {
             <h1 className="header-title">
               <strong>Привет, меня зовут Александр</strong>
               <br />
-              junior frontend разработчик
+              Frontend разработчик
             </h1>
           </div>
         </div>

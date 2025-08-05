@@ -7,7 +7,7 @@ const Contacts = () => {
     <>
       <main className="section">
         <div className="container">
-          <img className="contact-photo" src={photo} alt="My photo" />
+          <img className="contact-photo" src={photo} alt="Фото Александра" />
           <h1 className="title-1">Контакты для связи</h1>
           <ul className="contact-list">
             <li className="contact-list__item">
